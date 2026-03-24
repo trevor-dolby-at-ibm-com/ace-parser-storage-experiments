@@ -89,7 +89,9 @@ will cause messages to be printed when the server frees parser storage:
 ## CP4i artifacts
 
 CP4i containers can be told to use these options, and this can help reduce storage use within
-the cluster. This is possible in the 12.0.12-r22 SC2 release but no others at present.
+the cluster. This is possible in the 12.0.12-r22 SC2 release but no others at present; see the
+[12.0 SC2 container image docs](https://www.ibm.com/docs/en/app-connect/12.0.x?topic=acicltsc2-obtaining-app-connect-enterprise-server-image-from-container-registry)
+for details and SHA hashes for image pulls.
 
 ### IntegrationRuntime
 
