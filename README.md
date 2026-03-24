@@ -110,6 +110,16 @@ set the environment variables:
                 glibc.malloc.mxfast=100:glibc.malloc.mmap_max=1073741824:glibc.malloc.mmap_threshold=131072
 ```
 
+These settings should cause the server to log the values it reads:
+```
+2026-03-24 01:34:43.263968: BIP8099I: Using custom parser chunk size: json - 16777216
+2026-03-24 01:34:43.264124: BIP8099I: Using custom parser chunk size: xmlnsc - 16777216
+2026-03-24 01:34:43.264208: BIP8099I: Using custom parser chunk size: dfdl - 16777216
+2026-03-24 01:34:43.264408: BIP8099I: Parser storage management FreeOnPoolReturn: default - 0
+2026-03-24 01:34:43.264532: BIP8099I: Parser storage management ShrinkOnIdleTime: default - 100:20
+```
+
+
 ### server.conf.yaml
 
 A server.conf.yaml Configuration is needed for the 
