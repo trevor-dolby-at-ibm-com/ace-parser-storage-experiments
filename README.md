@@ -11,12 +11,12 @@ new options for ACE servers that allow the behaviour to be changed.
 
 The default behaviour as follows (note that the numbers are for illustration only):
 
-![default-memory-usage](/pictures/default-memory-usage.png)
+![default-memory-usage-light](/pictures/default-memory-usage-light.png#gh-light-mode-only)![default-memory-usage-dark](/pictures/default-memory-usage-dark.png#gh-dark-mode-only)
 
 and using several options at the same time can allow for storage to be returned to the
 operating system for use by other processes (numbers for illustration only):
 
-![mmap-reduced-storage](/pictures/mmap-reduced-storage.png)
+![mmap-reduced-storage-light](/pictures/mmap-reduced-storage-light.png#gh-light-mode-only)![mmap-reduced-storage-dark](/pictures/mmap-reduced-storage-dark.png#gh-dark-mode-only)
 
 ## Environment variables
 

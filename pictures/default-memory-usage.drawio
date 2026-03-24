@@ -1,0 +1,94 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.6.1 Chrome/142.0.7444.265 Electron/39.8.0 Safari/537.36" scale="1.5" border="0" version="29.6.1">
+  <diagram name="Page-1" id="ebQjVzU91OkPXuFwU88t">
+    <mxGraphModel dx="1328" dy="1123" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="1700" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="rRvjYCyV6rsG5tVFgsAK-11" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=18;" value="Initial" vertex="1">
+          <mxGeometry height="30" width="60" x="110" y="410" as="geometry" />
+        </mxCell>
+        <mxCell id="rRvjYCyV6rsG5tVFgsAK-18" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=18;" value="Max load" vertex="1">
+          <mxGeometry height="30" width="80" x="340" y="410" as="geometry" />
+        </mxCell>
+        <mxCell id="5wLIeXSQ3aoNjS7ymkbC-2" parent="1" style="swimlane;whiteSpace=wrap;html=1;fontSize=14;" value="500MB" vertex="1">
+          <mxGeometry height="160" width="120" x="80" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="rRvjYCyV6rsG5tVFgsAK-7" parent="5wLIeXSQ3aoNjS7ymkbC-2" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=14;fontColor=light-dark(#000000,#000000);" value="Heap storage&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="85" width="120" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="rRvjYCyV6rsG5tVFgsAK-6" parent="5wLIeXSQ3aoNjS7ymkbC-2" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=14;fontColor=light-dark(#000000,#000000);" value="Other" vertex="1">
+          <mxGeometry height="45" width="120" y="115" as="geometry" />
+        </mxCell>
+        <mxCell id="5wLIeXSQ3aoNjS7ymkbC-5" parent="5wLIeXSQ3aoNjS7ymkbC-2" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=light-dark(#000000,#000000);strokeColor=#666666;fontSize=14;" value="Flows" vertex="1">
+          <mxGeometry height="30" width="80" x="20" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="5wLIeXSQ3aoNjS7ymkbC-8" parent="1" style="swimlane;whiteSpace=wrap;html=1;" value="1GB" vertex="1">
+          <mxGeometry height="320" width="120" x="320" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="5wLIeXSQ3aoNjS7ymkbC-9" parent="5wLIeXSQ3aoNjS7ymkbC-8" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=14;fontColor=light-dark(#000000,#000000);" value="Heap storage&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="245" width="120" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="5wLIeXSQ3aoNjS7ymkbC-10" parent="5wLIeXSQ3aoNjS7ymkbC-8" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=14;fontColor=light-dark(#000000,#000000);" value="Other" vertex="1">
+          <mxGeometry height="45" width="120" y="275" as="geometry" />
+        </mxCell>
+        <mxCell id="5wLIeXSQ3aoNjS7ymkbC-11" parent="5wLIeXSQ3aoNjS7ymkbC-8" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=light-dark(#000000,#000000);strokeColor=#666666;fontSize=14;" value="Flows" vertex="1">
+          <mxGeometry height="30" width="80" x="20" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="5wLIeXSQ3aoNjS7ymkbC-17" parent="5wLIeXSQ3aoNjS7ymkbC-8" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14;fontColor=light-dark(#000000,#000000);" value="Strings and other flow data" vertex="1">
+          <mxGeometry height="50" width="100" x="10" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="5wLIeXSQ3aoNjS7ymkbC-16" parent="5wLIeXSQ3aoNjS7ymkbC-8" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14;fontColor=light-dark(#000000,#000000);" value="Large&lt;div&gt;BLOBs&lt;/div&gt;" vertex="1">
+          <mxGeometry height="50" width="100" x="10" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="5wLIeXSQ3aoNjS7ymkbC-14" parent="5wLIeXSQ3aoNjS7ymkbC-8" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14;fontColor=light-dark(#000000,#000000);" value="Syntax elements" vertex="1">
+          <mxGeometry height="50" width="100" x="10" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5wLIeXSQ3aoNjS7ymkbC-18" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=18;" value="Idle" vertex="1">
+          <mxGeometry height="30" width="60" x="590" y="410" as="geometry" />
+        </mxCell>
+        <mxCell id="5wLIeXSQ3aoNjS7ymkbC-19" parent="1" style="swimlane;whiteSpace=wrap;html=1;" value="1GB" vertex="1">
+          <mxGeometry height="320" width="120" x="560" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="5wLIeXSQ3aoNjS7ymkbC-20" parent="5wLIeXSQ3aoNjS7ymkbC-19" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=14;fontColor=light-dark(#000000,#000000);" value="Heap storage&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="245" width="120" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="5wLIeXSQ3aoNjS7ymkbC-21" parent="5wLIeXSQ3aoNjS7ymkbC-19" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=14;fontColor=light-dark(#000000,#000000);" value="Other" vertex="1">
+          <mxGeometry height="45" width="120" y="275" as="geometry" />
+        </mxCell>
+        <mxCell id="5wLIeXSQ3aoNjS7ymkbC-22" parent="5wLIeXSQ3aoNjS7ymkbC-19" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=light-dark(#000000,#000000);strokeColor=#666666;fontSize=14;" value="Flows" vertex="1">
+          <mxGeometry height="30" width="80" x="20" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="5wLIeXSQ3aoNjS7ymkbC-23" parent="5wLIeXSQ3aoNjS7ymkbC-19" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14;fontColor=light-dark(#000000,#000000);" value="Strings and other flow data" vertex="1">
+          <mxGeometry height="40" width="100" x="10" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="5wLIeXSQ3aoNjS7ymkbC-25" parent="5wLIeXSQ3aoNjS7ymkbC-19" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14;fontColor=light-dark(#000000,#000000);" value="Syntax elements" vertex="1">
+          <mxGeometry height="30" width="100" x="10" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="5wLIeXSQ3aoNjS7ymkbC-26" edge="1" parent="1" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;endWidth=29;endSize=9.67;width=18;fillColor=#647687;strokeColor=#314354;fontSize=14;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="240" y="319.5" as="sourcePoint" />
+            <mxPoint x="300" y="319.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5wLIeXSQ3aoNjS7ymkbC-28" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=18;" value="&lt;b&gt;DataFlowEngine RSS size&lt;/b&gt;" vertex="1">
+          <mxGeometry height="70" width="170" x="80" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="5wLIeXSQ3aoNjS7ymkbC-53" edge="1" parent="1" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;endWidth=29;endSize=9.67;width=18;fillColor=#647687;strokeColor=#314354;fontSize=14;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="470" y="319.5" as="sourcePoint" />
+            <mxPoint x="530" y="319.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5wLIeXSQ3aoNjS7ymkbC-64" parent="1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;strokeColor=light-dark(#FF0000,#FF0000);fillColor=none;fontSize=14;" value="&lt;font style=&quot;color: light-dark(rgb(255, 0, 0), rgb(255, 0, 0));&quot;&gt;Process size still large despite lots of free heap space&lt;/font&gt;" vertex="1">
+          <mxGeometry height="110" width="90" x="454" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="5wLIeXSQ3aoNjS7ymkbC-65" edge="1" parent="1" source="5wLIeXSQ3aoNjS7ymkbC-64" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0;entryDx=0;entryDy=0;endFill=1;strokeWidth=2;dashed=1;fontSize=14;exitX=0.75;exitY=0;exitDx=0;exitDy=0;strokeColor=light-dark(#FF0000,#FF0000);" target="5wLIeXSQ3aoNjS7ymkbC-20" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="757.8699999999998" y="320" as="sourcePoint" />
+            <mxPoint x="570" y="550" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
