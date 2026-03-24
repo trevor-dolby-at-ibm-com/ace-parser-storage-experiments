@@ -1,0 +1,42 @@
+
+
+CREATE COMPUTE MODULE HTTPFlow_JSONCompute
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+        SET OutputRoot.Properties = InputProperties;
+        SET OutputRoot.JSON.Data.reply = 'success';
+        
+        DECLARE fixed BOOLEAN (InputLocalEnvironment.HTTP.Input.Path.Segment[2] IS NOT NULL AND ( InputLocalEnvironment.HTTP.Input.Path.Segment[2] = 'fixed' ) );
+        DECLARE large BOOLEAN (InputLocalEnvironment.HTTP.Input.Path.Segment[2] IS NOT NULL AND ( InputLocalEnvironment.HTTP.Input.Path.Segment[2] = 'large') );
+
+        DECLARE I INTEGER 1;
+        CREATE LASTCHILD OF  OutputRoot.JSON.Data NAME 'dummy';
+        DECLARE dummyRef REFERENCE TO OutputRoot.JSON.Data.dummy;
+        DECLARE dummyChildRef REFERENCE TO OutputRoot.JSON.Data.dummy;
+        WHILE ( I <= 400000 ) DO
+            CREATE LASTCHILD OF dummyRef AS dummyChildRef NAME 'dummyChild';
+            IF fixed THEN
+	            SET dummyChildRef.One = 'testWithThirtyTwoCharactersTest1';
+	            SET dummyChildRef.Two = 'testWithThirtyTwoCharactersTest2';
+	            SET dummyChildRef.Three = 'testWithThirtyTwoCharactersTest3';
+	            SET dummyChildRef.Four = 'testWithThirtyTwoCharactersTest4';
+            ELSEIF large THEN 
+		        SET dummyChildRef.One = 'testWithMoreThan16' || CAST(I AS CHARACTER CCSID 1208);
+        	    SET dummyChildRef.Two = 'testWithMoreThan16' || CAST(I AS CHARACTER CCSID 1208);
+            	SET dummyChildRef.Three = 'testWithMoreThan16' || CAST(I AS CHARACTER CCSID 1208);
+	            SET dummyChildRef.Four = 'testWithMoreThan16' || CAST(I AS CHARACTER CCSID 1208);
+            ELSE
+	            SET dummyChildRef.One = 'test1' || CAST(I AS CHARACTER CCSID 1208);
+	            SET dummyChildRef.Two = 'test2' || CAST(I AS CHARACTER CCSID 1208);
+	            SET dummyChildRef.Three = 'test3' || CAST(I AS CHARACTER CCSID 1208);
+	            SET dummyChildRef.Four = 'test4' || CAST(I AS CHARACTER CCSID 1208);
+            END IF;
+
+            SET I = I + 1;
+	    END WHILE;
+
+        SET OutputRoot.JSON.Data.dummy = NULL;
+  
+		RETURN TRUE;
+	END;
+END MODULE;

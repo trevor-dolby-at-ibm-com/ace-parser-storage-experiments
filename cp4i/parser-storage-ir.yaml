@@ -1,0 +1,53 @@
+apiVersion: appconnect.ibm.com/v1beta1
+kind: IntegrationRuntime
+metadata:
+  name: parser-storage
+  labels:
+    appconnect.ibm.com/batchflow: 'false'
+    appconnect.ibm.com/designerapiflow: 'false'
+    appconnect.ibm.com/designereventflow: 'false'
+    appconnect.ibm.com/toolkitflow: 'true'
+    backup.appconnect.ibm.com/component: integrationruntime
+  namespace: cp4i
+spec:
+  barURL:
+    - >-
+      https://db-01-quickstart-dash.cp4i:3443/v1/directories/UseParserElements?a88d6198-da84-4b95-a506-e66b4d117585
+  configurations:
+    - verbose-parser-messages
+    - parser-storage-mcp-ba-creds
+    - parser-storage-ir-adminssl
+  forceFlowsHTTPS:
+    enabled: true
+  license:
+    accept: true
+    license: L-CKFT-S6CHZW
+    use: CloudPakForIntegrationNonProductionFREE
+  logFormat: basic
+  replicas: 1
+  template:
+    spec:
+      containers:
+        - env:
+            - name: MQSI_SYNTAX_ELEMENT_POOL_CHUNK_SIZES
+              value: json=16777216,xmlnsc=16777216,dfdl=16777216
+            - name: MQSI_PARSER_SHRINK_ON_IDLE_TIME
+              value: default=100:20
+            - name: MQSI_PARSER_FREE_ON_POOL_RETURN
+              value: default=0
+            - name: GLIBC_TUNABLES
+              value: >-
+                glibc.malloc.mxfast=100:glibc.malloc.mmap_max=1073741824:glibc.malloc.mmap_threshold=131072
+          image: cp.icr.io/cp/appc/ace-server-prod:12.0.12-r22-20260313-095035
+          name: runtime
+          resources:
+            limits:
+              cpu: 300m
+              memory: 2048Mi
+            requests:
+              cpu: 300m
+              memory: 2048Mi
+      metadata:
+        annotations:
+          configuration-last-updated: parser-storage-mcp-ba-creds1774290450
+  version: 13.0.6.0-r1
